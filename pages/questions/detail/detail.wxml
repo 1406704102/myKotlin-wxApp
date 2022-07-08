@@ -1,0 +1,18 @@
+<!--pages/questions/detail/detail.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}">
+    <view slot="backText" class="text-bold text-lg text-black">返回</view>
+    <view slot="content" class="text-bold text-lg text-black">{{title}}</view>
+</cu-custom>
+
+<van-tabs swipeable animated active="{{nowIndex}}" border color="#F86564" bind:change="questionChange">
+    <van-tab wx:for="{{data}}" wx:for-index="index" title="第{{index+1}}题">
+        <view class="padding text-bold text-xl">
+            {{item.questionTitle}}
+        </view>
+        <view class="questionAnswer padding-right">
+<!--            <mp-html wx:if="{{nowIndex-1 === index||nowIndex+1 === index||nowIndex===index}}" content="{{item.questionAnswer}}" />-->
+            <mp-html wx:if="{{nowIndex === index}}" content="{{item.questionAnswer}}" />
+        </view>
+    </van-tab>
+</van-tabs>
+

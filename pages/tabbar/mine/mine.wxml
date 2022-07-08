@@ -1,0 +1,16 @@
+<cu-custom bgColor="bg-white">
+    <view slot="content" class="text-bold text-lg">早睡早起</view>
+</cu-custom>
+<view class="padding-lg">
+    <view class="flex justify-start align-center">
+        <view>
+            <view class="cu-avatar lg radius"
+                  style="background-image:url({{userInfo.avatarUrl}});"></view>
+        </view>
+        <view class="text-xxl text-bold margin-left" wx:if="{{userInfo.nickName}}">
+            {{userInfo.nickName}}
+        </view>
+        <button wx:else class="cu-btn round bg-orangeRed shadow margin-left" style="width:150rpx" bindtap="getUserProfile">登录</button>
+    </view>
+</view>
+

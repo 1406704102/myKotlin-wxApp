@@ -1,0 +1,11 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}">
+    <view slot="backText" class="text-bold text-lg text-black">返回</view>
+    <view slot="content" class="text-bold text-lg text-black">{{title}}</view>
+</cu-custom>
+<view class="cu-list menu sm-border text-black margin-top">
+    <navigator url="/pages/questions/detail/detail?index={{index}}&questionType={{item.questionType}}&title={{title}}" class="cu-item arrow text-black" wx:for="{{data}}" wx:for-index="index">
+        <view class="content">
+            <text class="text-cut-1">{{index+1}}、{{item.questionTitle}}</text>
+        </view>
+    </navigator>
+</view>

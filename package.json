@@ -1,0 +1,16 @@
+{
+  "name": "myweapp",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.10.3",
+    "mp-html": "^2.3.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

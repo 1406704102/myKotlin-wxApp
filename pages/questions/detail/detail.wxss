@@ -1,0 +1,5 @@
+/* pages/questions/detail/detail.wxss */
+.questionAnswer{
+    min-height: 75vh;
+}
+
